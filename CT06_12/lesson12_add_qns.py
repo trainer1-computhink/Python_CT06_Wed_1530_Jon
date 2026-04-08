@@ -1,59 +1,264 @@
-# A1. Count from 1 to 5
-# Write a program that prints the numbers 1 to 5 using a while loop.
-# Prints 1, 2, 3, 4, 5 (each on a new line)
+# =========================================
+# SET A — while <condition>:
+# Higher difficulty with and / or / not
+# =========================================
 
-# A2. Count from 5 down to 1
-# Write a while loop that prints 5, 4, 3, 2, 1.
-# Prints numbers in descending order from 5 to 1
+# A1
+# Question:
+# Write a program that starts with num = 2.
+# Use a while loop to print the value of num while:
+# - num is less than or equal to 20
+# - AND num is not equal to 14
+# Each time, increase num by 3.
+#
+# Output:
+# 2
+# 5
+# 8
+# 11
 
-# A3. Print even numbers up to 10
-# Use a while loop to print 2, 4, 6, 8, 10.
-# Only even numbers from 2 to 10 are printed
+# A2
+# Question:
+# Write a program that starts with count = 30.
+# Use a while loop to print count while:
+# - count is greater than or equal to 10
+# - AND count is not 18
+# Each time, subtract 4 from count.
+#
+# Output:
+# 30
+# 26
+# 22
 
-# A4. Add numbers from 1 to 4
-# Use a while loop to find the total of 1 + 2 + 3 + 4, then print the answer.
-# Prints 10
+# A3
+# Question:
+# Write a program that starts with x = 1 and total = 0.
+# Use a while loop to add x into total while:
+# - x is less than or equal to 8
+# - AND x is not 5
+# Increase x by 1 each round.
+# Print total at the end.
+#
+# Output:
+# 23
 
-# A5. Print a word 3 times
-# Use a while loop to print "Hello!" three times.
-# "Hello!" is printed exactly 3 times
+# A4
+# Question:
+# Write a program that starts with n = 24.
+# Use a while loop to print n while:
+# - n is greater than 0
+# - AND n is not 9
+# - AND n is not 15
+# Each time, subtract 3 from n.
+#
+# Output:
+# 24
+# 21
+# 18
 
-# B1. Stop counting when you reach 3
-# Start from 1 and count upward, but use break to stop the loop when the number becomes 3.
-# Prints 1, 2, 3 and stops using break
+# A5
+# Question:
+# Write a program that starts with a = 3 and b = 1.
+# Use a while loop while:
+# - a is less than 20
+# - AND b is less than 6
+# In each round:
+# - print a * b
+# - increase a by 4
+# - increase b by 1
+#
+# Output:
+# 3
+# 14
+# 33
+# 60
+# 95
 
-# B2. Ask until the user types "ok"
-# Use while True to keep asking for input until the user types "ok".
-# Loop repeats until "ok" is entered, then stops
 
-# B3. Guessing game
-# Keep asking the user to guess the number 7. Stop when they get it right.
-# Loop continues until user enters 7, then prints success message and stops
+# =========================================
+# SET B — Bridge (while condition → break)
+# Must use while condition and break
+# =========================================
 
-# B4. Stop when total becomes too big
-# Start with total = 0. Keep adding 2. Stop the loop when total becomes greater than 8.
-# Loop stops using break when total > 8
+# B1
+# Question:
+# Write a program that starts with num = 1.
+# Use a while loop with the condition num <= 20.
+# In each round:
+# - if num is divisible by 4 OR divisible by 7, print "STOP" and break
+# - otherwise print num
+# - then increase num by 3
+#
+# Output:
+# 1
+# STOP
 
-# B5. Search a list and stop early
-# Check numbers in [3, 5, 8, 10] one by one. Stop as soon as you find 8.
-# Prints a message when 8 is found and stops early
+# B2
+# Question:
+# Write a program that starts with total = 0 and n = 2.
+# Use a while loop with the condition total < 50.
+# In each round:
+# - add n to total
+# - if total is 20 OR total is 35, print "Break at", followed by total, and break
+# - otherwise print total
+# - then increase n by 3
+#
+# Output:
+# 2
+# 7
+# 15
+# Break at 26
 
-# C1. Password checker
-# Keep asking the user to type the password "python123". Stop only when it is correct.
-# Loop continues until correct password is entered
+# B3
+# Question:
+# Write a program that asks the user to enter a number.
+# Keep looping while the number is not 99.
+# Inside the loop:
+# - if the number is less than 0 OR greater than 50, print "Invalid" and break
+# - otherwise print "Try again" and ask again
+#
+# Output:
+# If user types:
+# 10
+# 20
+# 60
+#
+# Output should be:
+# Try again
+# Try again
+# Invalid
 
-# C2. Menu exit
-# Ask the user to type "play" or "quit". If they type "quit", stop the program.
-# Loop only ends when "quit" is entered
+# B4
+# Question:
+# Write a program that checks the list:
+# [5, 9, 12, 15, 18, 21]
+# using a while loop and an index.
+# Keep looping while the index is still inside the list.
+# Inside the loop:
+# - if the current number is divisible by 4 OR divisible by 7, print "Found special number" and break
+# - otherwise print the number
+# - move to the next index
+#
+# Output:
+# 5
+# 9
+# Found special number
 
-# C3. Positive number checker
-# Ask the user to enter a positive number. If it is 0 or negative, ask again.
-# Loop continues until a positive number is entered
+# B5
+# Question:
+# Write a program that starts with x = 50.
+# Use a while loop with the condition x >= 0.
+# In each round:
+# - if x is less than 10 OR x is equal to 26, print "Emergency stop" and break
+# - otherwise print x
+# - subtract 8 from x
+#
+# Output:
+# 50
+# 42
+# 34
+# Emergency stop
 
-# C4. Roll until 6
-# Simulate a variable called roll. Keep looping until roll == 6, then stop.
-# Loop stops using break when roll equals 6
 
-# C5. Type "stop" to end
-# Keep asking the user to type a word. End the loop only when they type "stop".
-# Loop continues for all other words and stops when "stop" is entered
+# =========================================
+# SET C — while True + break
+# Higher difficulty with and / or / not
+# =========================================
+
+# C1
+# Question:
+# Write a program that keeps asking the user to enter a password.
+# Use while True.
+# Break only when the password is:
+# - "dragon"
+# - OR "tiger"
+# If the password is empty OR only one character long, print "Too short".
+# Otherwise print "Wrong password".
+#
+# Output:
+# Example inputs:
+# a
+# hello
+# tiger
+#
+# Output:
+# Too short
+# Wrong password
+
+# C2
+# Question:
+# Write a program that keeps asking the user to enter a number.
+# Use while True.
+# Break only when the number is:
+# - greater than 0
+# - AND divisible by 3
+# - AND not divisible by 2
+# Otherwise print "Not correct yet".
+#
+# Output:
+# Example inputs:
+# 4
+# 12
+# 9
+#
+# Output:
+# Not correct yet
+# Not correct yet
+
+# C3
+# Question:
+# Write a program that keeps asking the user to type a command.
+# Use while True.
+# Break only if the command is "exit" OR "quit".
+# If the command is not "start" AND not "help" AND not "exit" AND not "quit",
+# print "Unknown command".
+# Otherwise print "Accepted command".
+#
+# Output:
+# Example inputs:
+# play
+# help
+# quit
+#
+# Output:
+# Unknown command
+# Accepted command
+
+# C4
+# Question:
+# Write a program that keeps asking the user to enter two numbers: a and b.
+# Use while True.
+# Break only when:
+# - a is greater than b
+# - AND a - b is less than 5
+# If a is equal to b OR a is less than b, print "Order not correct".
+# Otherwise print "Difference too big".
+#
+# Output:
+# Example inputs:
+# a = 3, b = 7
+# a = 12, b = 2
+# a = 9, b = 6
+#
+# Output:
+# Order not correct
+# Difference too big
+
+# C5
+# Question:
+# Write a program that keeps asking the user to enter a word.
+# Use while True.
+# Break only when:
+# - the word starts with "s"
+# - AND ends with "p"
+# - AND is not "stop"
+# If the word is "stop" OR "skip", print "Blocked word".
+# Otherwise print "Try another word".
+#
+# Output:
+# Example inputs:
+# stop
+# ship
+#
+# Output:
+# Blocked word
