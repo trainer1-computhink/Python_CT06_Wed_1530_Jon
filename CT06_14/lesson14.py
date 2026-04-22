@@ -30,3 +30,28 @@
 # Item Last: $ZZZ
 # --------------------
 # Total: $AAA
+
+
+# Task 4a
+# Create a list of possible moves:
+# ["scissors", "paper", "stone"]
+
+# Initialize 2 variables:
+# player_score
+# computer_score
+
+# Use a while loop to ask for the user’s move while player_score and computer_score is less than 3.
+
+# Task 4b
+# In the while loop:
+# Import the random library, use random.choice() to let the computer pick from the move list and print it.
+
+# Compare the user’s choice and computer’s choice to determine the result.
+
+# Increment player_score or computer_score depending on the result.
+
+# Print the result and scores.
+
+Task 4c
+# Print the final result after the while loop has ended.
+# Modify the loop to check for invalid choices.
