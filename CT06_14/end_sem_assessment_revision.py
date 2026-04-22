@@ -19,7 +19,8 @@ groceries = ["apple", "banana", "coconut", "pineapple", "pear"]
 #    ...
 
 # 6. Generate a random index based on the current list size.
-#    Print the item at that position, then remove it from the list.
+#    Remove it from the list.
+#    Print the item at that position.
 
 # 7. Ask the user to search for an item.
 
